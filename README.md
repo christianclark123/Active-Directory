@@ -121,7 +121,7 @@ Choose "Custom Install Windows", click next, and Install. Follow the setup promp
 ![image](https://github.com/user-attachments/assets/5be18b6e-86f5-4423-8ad1-84ef90d69cb1)
 ![image](https://github.com/user-attachments/assets/995b3de4-283b-4182-a0ff-95eb676a500e)
 
-Install Windows Server 2022. Search "Windows server 2022 iso" Click the first link, that will bring you to the registration page. Click on the "Download ISO". After registration, you will be able to download the ISO image. *NOTE* This may take a while depending on your download speeds.
+Install Windows Server 2022. Search "Windows server 2022 iso" Click the first link, which will bring you to the registration page. Click on the "Download ISO". After registration, you will be able to download the ISO image. *NOTE* This may take a while depending on your download speeds.
 
 ![image](https://github.com/user-attachments/assets/9f16ab41-0a3e-411a-8990-be82b9488aa4)
 ![image](https://github.com/user-attachments/assets/aab087ce-8872-47d4-b588-1c53e9328435)
@@ -153,16 +153,16 @@ Log on to your Administrator account using the password you set up in the previo
 
 ![image](https://github.com/user-attachments/assets/ece1a205-8c65-4d16-bdef-56c8e3b1b2e7)
 
-When logged on to your administrator account a Network screen will popup asking you if you want the PC to be discoverable. You can click "No" as we will configure this according to the Network topology diagram we created at the beginning of this lab.
+When logged on to your administrator account a Network screen will pop up asking you if you want the PC to be discoverable. You can click "No" as we will configure this according to the Network topology diagram we created at the beginning of this lab.
 
 ![image](https://github.com/user-attachments/assets/92ddd4db-a78a-4aba-b0b9-f35a9010ef2e)
 
-When you log into your ADDC01 VM a program called Server Manager will popup. Server manager is where you will go to configure your Active Directory Domain Controller(ADDC). In the server manager you will also be able to configure organizational units, groups, accesses, and users. 
+When you log into your ADDC01 VM a program called Server Manager will popup. Server manager is where you will go to configure your Active Directory Domain Controller(ADDC). In the server manager, you will also be able to configure organizational units, groups, accesses, and users. 
 
 ![image](https://github.com/user-attachments/assets/a9fc96ff-1dc9-4a5a-b118-1b957e8cf90c)
 
 Before we configure anything, we will rename our Server and Windows 10 Client PCs. 
-Right click the Windows icon, click settings, system, scroll down to "About", and click "Rename This PC". Rename both your DC controller and client PC according to your diagram.
+Right-click the Windows icon, click Settings, system, scroll down to "About", and click "Rename This PC". Rename both your DC controller and client PC according to your diagram.
 Restart the VM after renaming.
 
 ![image](https://github.com/user-attachments/assets/68563a0f-a684-4e4e-a361-bb2b0403755b)
@@ -180,7 +180,7 @@ Click "NAT Networks" and "Create". At the bottom under General Options name the 
 
 ![image](https://github.com/user-attachments/assets/45a2fadd-023f-493a-8eff-0cd52f92eb11)
 
-Go to both your ADDC and Client in VirtualBox manager and click settings and Network and change the attached adapter to the newly created NAT network. 
+Go to both your ADDC and Client in VirtualBox manager click settings and Network and change the attached adapter to the newly created NAT network. 
 
 ![image](https://github.com/user-attachments/assets/ae3619f8-ed75-4d46-8a76-292ff8e5fd43)
 
@@ -189,7 +189,7 @@ Open either your ADDC or Client and under the search type "cmd" and click it. Th
 ![image](https://github.com/user-attachments/assets/248072f4-0166-4cc0-87aa-4d274c4a0f31)
 ![image](https://github.com/user-attachments/assets/cc9cd2e9-2e97-4f63-a581-ca34dbc88c9f)
 
-On my command prompt my client PC IP is 192.168.10.4. According to my diagram i want my client PC to have a static IP of 192.168.10.100/24.
+On my command prompt my client PC IP is 192.168.10.4. According to my diagram, I want my client's PC to have a static IP of 192.168.10.100/24.
 To change the IP address we will click on the network icon in the bottom right and click "Network & Internet Settings"
 
 ![image](https://github.com/user-attachments/assets/13453e96-f0e6-46fa-b5c7-a0b827f2f4a2)
@@ -198,7 +198,7 @@ Under Advanced network settings click "Change adapter options"
 
 ![image](https://github.com/user-attachments/assets/e1e0d9e8-5368-4a09-a1e1-110c4b48f745)
 
-This will bring up a Network Connections window with a Ethernet connection. Right click on the Ethernet connection and click properties.
+This will bring up a Network Connections window with an Ethernet connection. Right-click on the Ethernet connection and click properties.
 
 ![image](https://github.com/user-attachments/assets/2941a880-c08c-417e-b850-5d0341857e7e)
 
@@ -209,7 +209,7 @@ Double click the "Internet Protocol Version 4 (TCP/IPv4). In order to set a stat
 ![image](https://github.com/user-attachments/assets/1bfa8815-31fc-4493-afb2-614e40569dc1)
 
 Now we will configure our ADDC-01 to a domain controller. 
-On the Server VM, open Server manager and click Manage -> Add Roles and Features
+On the Server VM, open Server Manager and click Manage -> Add Roles and Features
 
 ![image](https://github.com/user-attachments/assets/e830d46c-7fb2-4083-a2fd-6c37cce42b09)
 
@@ -239,7 +239,7 @@ After installation on your Server Manager there will be a Cuation Flag click on 
 ![image](https://github.com/user-attachments/assets/b4923633-7d06-4aa7-977a-1b04672b29f0)
 ![image](https://github.com/user-attachments/assets/8dfebb26-7f55-40ad-8dff-d540fc923df7)
 
-Since this is the first domain choose "Add a new forest" and name your domain. For my domain i named it ADLab.local
+Since this is the first domain choose "Add a new forest" and name your domain. For my domain, I named it ADLab.local
 
 ![image](https://github.com/user-attachments/assets/5f084601-15f3-4ba2-929a-4d9ac818e1da)
 
@@ -247,11 +247,11 @@ Set a password for your domain and click next until you reach Additional Options
 
 ![image](https://github.com/user-attachments/assets/59fda96e-8967-4c2b-bd00-f276fe65a549)
 
-On the Additional OPtions window your NETBIOS name should be what you named your root domain. Click Next
+On the Additional Options window, your NETBIOS name should be what you named your root domain. Click Next
 
 ![image](https://github.com/user-attachments/assets/fdaedd60-8f84-438a-bfe2-909ce04c35f0)
 
-Click Next on the Paths window, review your domain options, and click Next. Click Install once your prerequisite checks pass successfully. After installation the computer will restart.
+Click Next on the Paths window, review your domain options, and click Next. Click Install once your prerequisite checks pass successfully. After installation, the computer will restart.
 
 ![image](https://github.com/user-attachments/assets/d1162496-6dc7-4108-83e2-b3124ad04ba2)
 
@@ -317,6 +317,22 @@ For my IT_Admin group, I want it to have full administrator access so I will add
 ![image](https://github.com/user-attachments/assets/10f1bf02-c88c-4e7c-9c76-ab1bf1d7dc2f)
 ![image](https://github.com/user-attachments/assets/4c44483b-e62c-4d6c-8ebc-266f084d3e75)
 
+Next, we will configure group policies using the Server Manager. Under Tools, click Group Policy Management. For this lab, I will configure a domain-wide password complexity policy.
+Expand your domain -> Click on Group Policy Objects -> Right-click default Domain Policy -> Edit
 
+![image](https://github.com/user-attachments/assets/0260499f-d94c-46bd-aba7-08951435d5fb)
+![image](https://github.com/user-attachments/assets/1658a6d6-f376-4411-8e99-577764f32ec7)
 
+This brings up a Group Policy Management Editor. In this window under Computer Configuration -> Policies -> Window Settings -> Security Settings -> Account Policies -> Password Policy.
+
+![image](https://github.com/user-attachments/assets/66f86e4a-a818-4d2f-9896-6e96e027a9fd)
+
+Double click and enable "Password must meet complexity requirements" and to change the password length double click on "Minimum password length" put your minimum length and hit apply.
+
+![image](https://github.com/user-attachments/assets/dad2fba9-69f9-4745-b465-425aa0876dd9)
+![image](https://github.com/user-attachments/assets/e0c03a2b-afca-4658-b8a1-8625abbba7ac)
+
+Close the Group Policy Management Editor and to force group policy updates open a command prompt and type "gpupdate /force"
+
+![image](https://github.com/user-attachments/assets/ae3e03e3-8fae-4624-8c79-2e4a4277e85a)
 
