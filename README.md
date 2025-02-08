@@ -63,7 +63,7 @@ Also, add the network information underneath each icon
 
 Save the diagram to your computer. This is the network topology we will use when setting up our network and active directory.
 
-Next, we will download Virtual Box for Windows Hosts. https://www.virtualbox.org/wiki/Downloads. VirtualBox is the application that will host the virtual machines for this lab. 
+Next, we will download <a href="https://www.virtualbox.org/wiki/Downloads">Virtual Box for Windows Hosts</a>. VirtualBox is the application that will host the virtual machines for this lab. 
 
 ![image](https://github.com/user-attachments/assets/e0345df9-d222-40f4-9f58-96c2c9c9ffb7)
 
