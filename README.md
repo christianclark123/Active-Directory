@@ -23,7 +23,7 @@ The Active Directory Home Lab project is designed to create a simulated enterpri
 - Group Policy Management Console (GPMC) for configuring and enforcing group policies.
 
 ## Steps
-Before we begin we will set up our simulated Enterprise Domain Network Topology Diagram using the free website draw.io https://app.diagrams.net/
+Before we begin we will set up our simulated Enterprise Domain Network Topology Diagram using the free website <a href="https://app.diagrams.net/">draw.io</a>.
 
 Once the website has loaded, choose "Blank Diagram" and click Create.
 
